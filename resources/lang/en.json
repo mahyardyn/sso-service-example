@@ -1,0 +1,12 @@
+[
+    "Authorized",
+    "Permission denied",
+    "Unauthorized",
+    "Forbidden",
+    "Resource Not Found",
+    "Method Not Allowed",
+    "Request unable to be processed",
+    "Please try again in two minutes",
+    "The information entered is incorrect",
+    "Whoops, looks like something went wrong"
+]

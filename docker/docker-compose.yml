@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+
+  mongo-sso:
+    container_name: mongo-sso
+    image: mongo
+    restart: unless-stopped
+    volumes:
+      - /var/mongo/mongo-sso:/data/db
+    ports:
+      - 27018:27017
+
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: fsj0h2Inas
+
+  mongo-express-sso:
+    container_name: mongo-express-sso
+    image: mongo-express
+    restart: unless-stopped
+    ports:
+      - 8081:8081
+    environment:
+      ME_CONFIG_MONGODB_ENABLE_ADMIN: 'true'
+      ME_CONFIG_MONGODB_SERVER: 'mongo-sso'
+      ME_CONFIG_BASICAUTH_USERNAME: 'habibi'
+      ME_CONFIG_BASICAUTH_PASSWORD: 'Rc%6BJw0AXm@uijTJChH'
+      ME_CONFIG_MONGODB_ADMINUSERNAME: 'root'
+      ME_CONFIG_MONGODB_ADMINPASSWORD: 'fsj0h2Inas'
+      ME_CONFIG_MONGODB_URL: 'mongodb://root:fsj0h2Inas@mongo-sso:27018/'
+
+  redis-sso:
+    container_name: redis-sso
+    command: redis-server --requirepass 123456**
+    image: redis:latest
+    restart: unless-stopped
+    ports:
+      - 6379:6379

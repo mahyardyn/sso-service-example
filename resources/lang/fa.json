@@ -1,0 +1,25 @@
+{
+    "Authorized" : "کاربر مجاز است",
+    "Permission denied": "شما مجوز لازم را ندارید",
+    "Unauthorized" : "کاربر مجاز نیست",
+    "Forbidden" : "مجاز نیستید",
+    "Resource Not Found" : "درخواست مورد نظر یافت نشد",
+    "Method Not Allowed" : "متد ارسالی اشتباه است",
+    "Request unable to be processed" : "درخواست شما انجام نشد",
+    "Please try again in two minutes" : "لطفا دو دقیقه دیگر مجدد امتحان کنید",
+    "The information entered is incorrect" : "اطلاعات وارد شده اشتباه می باشد",
+    "Whoops, looks like something went wrong" : "وای، ظاهرا مشکلی پیش آمده است",
+
+    "The code was sent": "کد با موفقیت ارسال شد",
+    "Failed to send code": "متاسفانه کد ارسال نشد",
+
+    "Successfully logged out": "خروج با موفقیت انجام شد.",
+    "User created successfully" : "کاربر جدید با موفقیت ایجاد شد",
+    "User updated successfully": "کاربر با موفقیت ویرایش شد",
+    "User successfully registered.": "ثبت نام کاربر با موفقیت انجام شد",
+    "User logged in successfully.": "کاربر با موفقیت وارد شد",
+    "Mobile number is not set": "موبایل وارد شده معتبر نیست",
+    "The entered code is invalid": "کد وارد شده معتبر نمی باشد",
+
+    "User permission changed successfully": "سطح دسترسی کاربر با موفقیت تغییر کرد"
+}
